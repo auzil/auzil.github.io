@@ -1,3 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    color: #444;
+    font-size: 16px;
+    font-family: Source Sans Pro,Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border: 1px solid #dfdfdf;
+    background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 120px;
+}
+    */
+div.content {
+  position: relative;
+}
+
+div.business-container {
+  box-sizing: border-box;
+  padding: 15px 30px;
+  border: none;
+  background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 120px;
+}
+
+#appointment-form div.business-container div.business-content-logo-adjust-container div.business-description {
+  font-family: "Playfair Display", sans-serif;
+}
+#appointment-form div.business-container div.business-content-logo-adjust-container p {
+  text-align: center;
+}
+#appointment-form div.business-container div.business-content-logo-adjust-container p strong {
+  font-size: 20px;
+}
+
 .btn-primary {
+  background-color: #ec631d;
+}
+
+div.step-pane h2 span.step-number {
+  background-color: #ec631d;
+}
+
+#select-calendar-options .select-group div .item-image-container img {
+  border-radius: 10px;
+}
+
+#dates-and-times fieldset div.choose-time div.form-inline label:hover {
+  border-color: #ec631d;
+}
+#dates-and-times fieldset div.choose-time div.form-inline label.checked {
+  border-color: #ec631d;
+  color: #ec631d;
+}
+#dates-and-times fieldset div.choose-time div.form-inline div.choose-time-actions {
+  border-color: #ec631d;
+  color: #ec631d;
+}
+#dates-and-times fieldset div.choose-time div.form-inline a.btn.btn-primary.btn-next-step {
   background-color: #ec631d;
 }

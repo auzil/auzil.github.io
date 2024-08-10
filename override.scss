@@ -1,3 +1,130 @@
-.btn-primary {
-    background-color: #ec631d;
+$btn-color: #ec631d;
+$bg-color1: #c8dcff;
+// font
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+//header
+
+/*
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.42857143;
+    color: #444;
+    font-size: 16px;
+    font-family: Source Sans Pro,Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border: 1px solid #dfdfdf;
+    background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 120px;
 }
+    */
+
+//experiment
+div.content {
+    position: relative;
+}
+div.business-container {
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border: none;
+    background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 120px;
+}
+// description
+#appointment-form {
+    div.business-container {
+        div.business-content-logo-adjust-container {
+            div.business-description {
+                font-family: "Playfair Display",sans-serif;
+            }
+
+            p {
+                text-align: center;
+                strong {
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+// @import url("https://auzil.github.io/override.css")
+.btn-primary {
+    background-color: $btn-color
+}
+
+// form step 
+
+div.step-pane {
+    h2 {
+        span.step-number {
+            background-color: $btn-color
+        }
+    }
+}
+
+
+// select profile photo
+#select-calendar-options {
+    .select-group {
+      div {
+        .item-image-container {
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // calendar
+  #dates-and-times {
+    fieldset {
+        div.choose-time {
+            div.form-inline {
+                label {
+                    &:hover {
+                        border-color: $btn-color;
+                    }
+                    &.checked {
+                        border-color: $btn-color;
+                        color: $btn-color;
+                    }
+                }
+
+                div.choose-time-actions {
+                    border-color: $btn-color;
+                    color: $btn-color;
+                }
+
+                a.btn.btn-primary.btn-next-step {
+                    background-color: $btn-color
+                }
+            }
+        }
+    }
+  }
