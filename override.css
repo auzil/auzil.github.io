@@ -27,11 +27,37 @@ div.content {
   position: relative;
 }
 
+/*
 div.business-container {
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border: none;
+    background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 120px;
+}
+    */
+div.business-container {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 1.42857143;
+  color: #444;
+  font-size: 16px;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  height: 45.2083333333vw;
   box-sizing: border-box;
   padding: 15px 30px;
   border: none;
-  background: url("https://deonnis3.theweb.place/happycurls/images/why-we-images.png");
+  background: url("https://happycurls.pl/images/hero-bg.png");
   flex-direction: column;
   position: relative;
   left: 50%;
@@ -42,7 +68,73 @@ div.business-container {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  padding-top: 120px;
+  background-size: cover;
+}
+div.business-container::before {
+  content: "";
+  width: 43.2291666667vw;
+  background: rgba(0, 155, 234, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+div.business-container .business-description {
+  height: 45.2083333333vw;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+div.business-container .business-description p {
+  max-width: 27.6041666667vw;
+  font-size: 4.7916666667vw;
+  font-weight: 600;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+}
+div.business-container .business-description p strong:first-child {
+  max-width: 27.6041666667vw;
+  font-size: 4.7916666667vw;
+  font-weight: 600;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  margin-bottom: 1.3541666667vw;
+}
+div.business-container div.business-logo-container {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+}
+div.business-container div.business-logo-container img {
+  width: 3.6979166667vw;
+  margin-right: 0.7291666667vw;
+}
+div.business-container div.business-logo-container img::after {
+  font-weight: 600;
+  color: #fff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.6666666667vw;
+  content: "HAPPYCURLS";
+}
+
+div.business-logo-container {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+}
+div.business-logo-container img {
+  width: 3.6979166667vw;
+  margin-right: 0.7291666667vw;
+}
+div.business-logo-container img::after {
+  font-weight: 600;
+  color: #fff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.6666666667vw;
+  content: "HAPPYCURLS";
 }
 
 #appointment-form div.business-container div.business-content-logo-adjust-container div.business-description {
