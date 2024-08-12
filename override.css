@@ -57,7 +57,7 @@ div.business-container {
   box-sizing: border-box;
   padding: 15px 30px;
   border: none;
-  background: url("https://happycurls.pl/images/hero-bg.png");
+  background: url("https://happycurls.pl/images/hero-bg.png") center bottom/cover #61c4eb;
   flex-direction: column;
   position: relative;
   left: 50%;
@@ -79,7 +79,30 @@ div.business-container::before {
   top: 0;
   height: 100%;
 }
-div.business-container .business-description {
+
+div.business-logo-container {
+  margin-top: 37px;
+  position: absolute;
+  display: flex;
+  top: 8vh;
+  left: 11vw;
+}
+div.business-logo-container img {
+  width: 3.6979166667vw;
+  margin-right: 0.7291666667vw;
+}
+div.business-logo-container::after {
+  font-weight: 600;
+  color: #fff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.6666666667vw;
+  content: "HAPPYCURLS";
+}
+
+#appointment-form div.business-container div.business-content-logo-adjust-container {
+  width: 75vw;
+}
+#appointment-form div.business-container div.business-content-logo-adjust-container div.business-description {
   height: 45.2083333333vw;
   position: relative;
   z-index: 1;
@@ -87,15 +110,16 @@ div.business-container .business-description {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  font-family: "Playfair Display", sans-serif;
 }
-div.business-container .business-description p {
+#appointment-form div.business-container div.business-content-logo-adjust-container p {
   max-width: 27.6041666667vw;
   font-size: 4.7916666667vw;
   font-weight: 600;
   font-family: "Playfair Display", sans-serif;
   color: #fff;
 }
-div.business-container .business-description p strong:first-child {
+#appointment-form div.business-container div.business-content-logo-adjust-container p strong {
   max-width: 27.6041666667vw;
   font-size: 4.7916666667vw;
   font-weight: 600;
@@ -103,48 +127,11 @@ div.business-container .business-description p strong:first-child {
   color: #fff;
   margin-bottom: 1.3541666667vw;
 }
-div.business-container div.business-logo-container {
-  position: absolute;
-  top: 0;
-  left: 10vw;
-}
-div.business-container div.business-logo-container img {
-  width: 3.6979166667vw;
-  margin-right: 0.7291666667vw;
-}
-div.business-container div.business-logo-container img::after {
-  font-weight: 600;
+#appointment-form div.business-container div.business-content-logo-adjust-container p div {
   color: #fff;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 1.6666666667vw;
-  content: "HAPPYCURLS";
-}
-
-div.business-logo-container {
-  position: absolute;
-  top: 0;
-  left: 10vw;
-}
-div.business-logo-container img {
-  width: 3.6979166667vw;
-  margin-right: 0.7291666667vw;
-}
-div.business-logo-container img::after {
-  font-weight: 600;
-  color: #fff;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 1.6666666667vw;
-  content: "HAPPYCURLS";
-}
-
-#appointment-form div.business-container div.business-content-logo-adjust-container div.business-description {
-  font-family: "Playfair Display", sans-serif;
-}
-#appointment-form div.business-container div.business-content-logo-adjust-container p {
-  text-align: center;
-}
-#appointment-form div.business-container div.business-content-logo-adjust-container p strong {
-  font-size: 20px;
+  font-size: 1.1458333333vw;
+  max-width: 27.6041666667vw;
+  margin-bottom: 1.5104166667vw;
 }
 
 .btn-primary {

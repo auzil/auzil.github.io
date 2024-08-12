@@ -65,7 +65,7 @@ div.business-container {
         box-sizing: border-box;
         padding: 15px 30px;
         border: none;
-        background: url("https://happycurls.pl/images/hero-bg.png");
+        background: url("https://happycurls.pl/images/hero-bg.png") center bottom / cover #61c4eb;
         flex-direction: column;
         position: relative;
         left: 50%;
@@ -88,71 +88,26 @@ div.business-container {
             top: 0;
             height: 100%;
         }
-
-        .business-description {
-            height: 45.2083333333vw;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-
-            p {
-                max-width: 27.6041666667vw;
-                font-size: 4.7916666667vw;
-                font-weight: 600;
-                font-family: "Playfair Display", sans-serif;
-                color: #fff;
-
-                strong {
-                    &:first-child {
-                        max-width: 27.6041666667vw;
-    font-size: 4.7916666667vw;
-    font-weight: 600;
-    font-family: "Playfair Display", sans-serif;
-    color: #fff;
-    margin-bottom: 1.3541666667vw;
-                    }
-                }
-            }
-        }
-
-        div.business-logo-container {
-            position: absolute;
-            top: 0;
-            left: 10vw;
-            img {
-                width: 3.6979166667vw;
-                margin-right: .7291666667vw;
-                &::after {
-                    // margin-left: 1vw;
-                    font-weight: 600;
-                    color: #fff;
-                    font-family: "Playfair Display", sans-serif;
-                    font-size: 1.6666666667vw;
-                    content: 'HAPPYCURLS'
-                }
-            }
-            
-        }
     }
 
     div.business-logo-container {
+        margin-top: 37px;
         position: absolute;
-        top: 0;
-        left: 10vw;
+        display: flex;
+        top: 8vh;
+        left: 11vw;
         img {
             width: 3.6979166667vw;
             margin-right: .7291666667vw;
-            &::after {
-                // margin-left: 1vw;
-                font-weight: 600;
-                color: #fff;
-                font-family: "Playfair Display", sans-serif;
-                font-size: 1.6666666667vw;
-                content: 'HAPPYCURLS'
-            }
+        }
+
+        &::after {
+            // margin-left: 1vw;
+            font-weight: 600;
+            color: #fff;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 1.6666666667vw;
+            content: 'HAPPYCURLS'
         }
         
     }
@@ -162,14 +117,39 @@ div.business-container {
 #appointment-form {
     div.business-container {
         div.business-content-logo-adjust-container {
+            width: 75vw;
+
             div.business-description {
+                height: 45.2083333333vw;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;    
                 font-family: "Playfair Display",sans-serif;
             }
 
             p {
-                text-align: center;
+                max-width: 27.6041666667vw;
+                font-size: 4.7916666667vw;
+                font-weight: 600;
+                font-family: "Playfair Display", sans-serif;
+                color: #fff;
+
                 strong {
-                    font-size: 20px;
+                    max-width: 27.6041666667vw;
+                    font-size: 4.7916666667vw;
+                    font-weight: 600;
+                    font-family: "Playfair Display", sans-serif;
+                    color: #fff;
+                    margin-bottom: 1.3541666667vw;
+                }
+                div {
+                    color: #fff;
+                    font-size: 1.1458333333vw;
+                    max-width: 27.6041666667vw;
+                    margin-bottom: 1.5104166667vw;
                 }
             }
         }
